@@ -38,43 +38,46 @@ function Home() {
     <Layout title="Homepage" description="Evmos Academy">
       <main>
         <br />
-        <div className="container landing-page-banner" style={{backgroundImage: `url(${blackHoleImg.src})`, textAlign:'center'}}>
-          <h1 align="center" className="evmos-display evmos-header banner-text" style={{ fontWeight: '800'}}>LEARN</h1>
-          <h1 align="center" className="evmos-display evmos-header banner-text" style={{ fontWeight: '800'}}>EVERYTHING</h1>
-          <h1 align="center" className="evmos-display evmos-header banner-text" style={{ fontWeight: '800'}}>EVMOS</h1>
-          <button className="action-button" onClick={() => window.location.href = "/articles"}>Watch Videos</button>
-          <button className="action-button" onClick={() => window.location.href = "/articles"} style={{marginLeft:'10%'}}>Explore Articles</button>
-          <div className="row">
-            <div className="col col--1" />
-            <div className="col col--3">
-              <FeatureCard
-                icon={<DevIcon style={{display:'inline'}} />}
-                title="For Developers"
-                link={"https://docs.evmos.org/"}
-              />
+        <div className="landing-page">
+          <div className="landing-page-banner" style={{backgroundImage: `url(${blackHoleImg.src})`}}>
+            <h1 className="evmos-display evmos-header " >LEARN</h1>
+            <h1 className="evmos-display evmos-header " >EVERYTHING</h1>
+            <h1 className="evmos-display evmos-header " >EVMOS</h1>
+            <button className="action-button" onClick={() => window.location.href = "/articles"}>Watch Videos</button>
+            <button className="action-button" onClick={() => window.location.href = "/articles"} style={{marginLeft:'10%'}}>Explore Articles</button>
+            <div className="row">
+              <div className="col col--1" />
+              <div className="col col--3">
+                <FeatureCard
+                  icon={<DevIcon style={{display:'inline'}} />}
+                  title="For Developers"
+                  link={"https://docs.evmos.org/"}
+                />
+              </div>
+              
+              <div className="col col--3">
+                <FeatureCard
+                  icon={<CommunityIcon style={{display:'inline'}} />}
+                  title="Enjoy Community"
+                  link={"articles/beginner/gettingstarted"}
+                />
+              </div>
+              
+              <div className="col col--3">
+                <FeatureCard
+                  link={"/faq"}
+                  icon={<GlossaryIcon style={{display:'inline'}} />}
+                  title="Browse FAQ"              
+                />
+              </div>
             </div>
-            
-            <div className="col col--3">
-              <FeatureCard
-                icon={<CommunityIcon style={{display:'inline'}} />}
-                title="Enjoy Community"
-                link={"articles/beginner/gettingstarted"}
-              />
-            </div>
-            
-            <div className="col col--3">
-              <FeatureCard
-                link={"/faq"}
-                icon={<GlossaryIcon style={{display:'inline'}} />}
-                title="Browse FAQ"              
-              />
-            </div>
+            <p style={{marginTop:10}}>
+              The Evmos Academy is your guide to building on and using Evmos. Learn how to deploy an app,
+              integrate wallets, create a governance proposal, and more.            
+            </p>
           </div>
-          <p style={{marginTop:10}}>
-            The Evmos Academy is your guide to building on and using Evmos. Learn how to deploy an app,
-            integrate wallets, create a governance proposal, and more.            
-          </p>
         </div>
+        
         <div className="container gap-top">
           <div className="row">
             <div className="col col--6">

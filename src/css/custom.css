@@ -480,6 +480,10 @@ html[data-theme='light'] {
     height: 25vh;
 
   }
+
+  .landing-page-banner {
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 996px){
@@ -540,6 +544,10 @@ html[data-theme='light'] {
   .latest-article img {
     max-width: 300px;
     height: 25vh;
+  }
+
+  .landing-page-banner {
+    height: 80vh;
   }
 }
 
@@ -742,16 +750,22 @@ details a{
   font-family: 'IBM Plex';
 }
 
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .landing-page-banner {
   width: 100vw;
-  height: 80vh;
+  text-align: center;
+  vertical-align: center;
   background-size: cover; /* Cover the entire container */
   background-repeat: no-repeat; /* Prevent image repetition */
   background-position: center center; /* Center the image horizontally and vertically */
 }
 
 .landing-page-banner h1{
- 
   color: black;
 }
 
