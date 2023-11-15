@@ -764,6 +764,10 @@ details a{
 }
 
 .landing-page-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 600px;
   width: 100vw;
   text-align: center;
   vertical-align: center;
@@ -781,8 +785,7 @@ details a{
 }
 
 .banner-text {
-  margin-top: 14%;
-  font-size: 80px;
+  font-size: 100px;
   justify-content: center;
   align-items: center;
   line-height: 80%;

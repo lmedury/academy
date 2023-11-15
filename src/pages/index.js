@@ -42,9 +42,10 @@ function Home() {
         <div className="landing-page">
           <div className="landing-page-banner" style={{backgroundImage: `url(${evmosBanner.src})`}}>
             <h1 className="banner-text" >LEARN <br/> EVERYTHING <br/> EVMOS</h1>
-            
-            <button className="action-button" onClick={() => window.location.href = "/articles"}>Watch Videos</button>
-            <button className="action-button" onClick={() => window.location.href = "/articles"} style={{marginLeft:'5%'}}>Explore Articles</button>
+            <div style={{marginBottom:'2%'}}>
+              <button className="action-button" onClick={() => window.location.href = "/articles"}>Watch Videos</button>
+              <button className="action-button" onClick={() => window.location.href = "/articles"} style={{marginLeft:'5%'}}>Explore Articles</button>
+            </div>
             <div className="row">
               <div className="col col--1" />
               <div className="col col--3">
