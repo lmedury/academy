@@ -781,8 +781,9 @@ details a{
 }
 
 .banner-text {
+  margin-top: 14%;
+  font-size: 80px;
   justify-content: center;
   align-items: center;
-  font-size: max(3vw, 70px);
   line-height: 80%;
 }
