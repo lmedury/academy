@@ -489,7 +489,7 @@ html[data-theme='light'] {
   }
 
   .landing-page-banner {
-    height: 120vh;
+    height: 140vh;
   }
 }
 
@@ -554,7 +554,7 @@ html[data-theme='light'] {
   }
 
   .landing-page-banner {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -777,6 +777,8 @@ details a{
 }
 
 .landing-page-banner h1{
+  font-size: 60px;
+  margin-top: 16%;
   color: black;
 }
 
